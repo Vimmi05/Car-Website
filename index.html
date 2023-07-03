@@ -7,6 +7,7 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
   <link rel="stylesheet" href="css/style.css">
 
   <title>Document</title>
@@ -14,58 +15,59 @@
 
 <body>
   <!-- nav-bar -->
-  <!-- <header> -->
-  <nav class="navbar navbar-expand-lg bg-dark border-bottom border-bottom-dark" data-bs-theme="dark">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">NavBar</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavDropdown">
-        <ul class="navbar-nav mx-auto">
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false"
-              href="#">Products</a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Features</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Pricing</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              More
-            </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
-            </ul>
-          </li>
-        </ul>
+  <header>
+    <nav class="navbar navbar-expand-lg bg-dark border-bottom border-bottom-dark" data-bs-theme="dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">NavBar</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false"
+                href="#">Products</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Pricing</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                More
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <form class="d-flex" role="search">
+          <input class="form-control custom-search " type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success custom-search" type="submit">Search</button>
+        </form>
       </div>
-      <form class="d-flex" role="search">
-        <input class="form-control custom-search " type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success custom-search" type="submit">Search</button>
-      </form>
+    </nav>
+    <div class="container1">
+      <h1 class="website-text">Website Name</h1>
+      <p class="text-line"> Lorem ipsum dolor sit amet, cons</p>
+      <div class="know-button">
+        <button type="button" class="btn btn-primary1 btn-lg">Know More</button>
+        <!-- <button type="button" class="btn btn-secondary btn-lg"></button> -->
+      </div>
     </div>
-  </nav>
-  <div class="container1">
-    <h1 class="website-text">Website Name</h1>
-    <p class="text-line"> Lorem ipsum dolor sit amet, cons</p>
-    <div class="know-button">
-      <button type="button" class="btn btn-primary1 btn-lg">Know More</button>
-      <!-- <button type="button" class="btn btn-secondary btn-lg"></button> -->
-    </div>
-  </div>
-  <!-- </header> -->
+  </header>
 
   <!-- Current Offers -->
   <div class="current-offers">
@@ -483,6 +485,24 @@
       </div>
     </div>
   </div>
+  <!-- Brands we trust -->
+  <div class="brands">
+    <h2>Brands <span>we Trust</span></h2>
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="https://boodmo.com/media/images/brand/1586c06.webp" alt="" srcset=""></div>
+        <div class="swiper-slide"><img src="https://boodmo.com/media/images/brand/1586c06.webp" alt="" srcset=""></div>
+        <div class="swiper-slide"><img src="https://boodmo.com/media/images/brand/1586c06.webp" alt="" srcset=""></div>
+        <div class="swiper-slide"><img src="https://boodmo.com/media/images/brand/1586c06.webp" alt="" srcset=""></div>
+        <div class="swiper-slide"><img src="https://boodmo.com/media/images/brand/1586c06.webp" alt="" srcset=""></div>
+        <div class="swiper-slide"><img src="https://boodmo.com/media/images/brand/1586c06.webp" alt="" srcset=""></div>
+        <div class="swiper-slide"><img src="https://boodmo.com/media/images/brand/1586c06.webp" alt="" srcset=""></div>
+        <div class="swiper-slide"><img src="https://boodmo.com/media/images/brand/1586c06.webp" alt="" srcset=""></div>
+        <div class="swiper-slide"><img src="https://boodmo.com/media/images/brand/1586c06.webp" alt="" srcset=""></div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </div>
 
   <!-- Testimonials -->
   <div class="testimonials">
@@ -590,7 +610,11 @@
       </div>
     </div>
   </footer>
+
+
   <script src="javascript/script.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
