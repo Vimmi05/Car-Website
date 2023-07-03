@@ -90,12 +90,17 @@ p {
 
 .vehicle-info,
 .slideshow-container,
-.content {
+.content,#car-buttons{
   background-color: #212529;
   padding: 20px;
   border-radius: 5px;
   margin-bottom: 20px;
 }
+#car-buttons .btn{
+  border: 1px solid #dee2e6;
+  color: #dee2e6;
+}
+
 .form-inline select {
   margin-right: 15px;
   padding-left: 10px;
@@ -223,13 +228,29 @@ q {
   object-fit: cover;
   margin-bottom: 10px;
   padding: 30px;
+  mix-blend-mode: multiply;
 }
-
+.swiper-button-prev,.swiper-button-next{
+  color: #212529;
+  
+}
 .active,
 .dot:hover {
   background-color: #737373;
 }
-
+#car-buttons .btn{
+  --bs-btn-padding-y: .75rem; 
+  --bs-btn-padding-x: .75rem; 
+  --bs-btn-font-size: 1rem;
+  text-align: center;
+  margin: 1.5rem;
+  margin-left: 2rem;
+  width: 10%;
+  text-transform: uppercase;
+}
+#car-buttons .btn:hover,:active{
+  background-color: #6c757d;
+}
 footer {
   background-color: #212529;
   padding: 45px 0 20px;
