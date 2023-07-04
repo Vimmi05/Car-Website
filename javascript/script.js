@@ -61,9 +61,9 @@ var swiper = new Swiper(".mySwiper", {
 });
 
 //Vehicle Search
-var myButton = document.getElementById("myButton");
-        var myPopup = document.getElementById("myPopup");
-        var closePopup = document.getElementById("closePopup");
+        const myButton = document.getElementById("myButton");
+        const myPopup = document.getElementById("myPopup");
+        const closePopup = document.getElementById("closePopup");
 
         myButton.addEventListener("click", function () {
             myPopup.style.display = "block";
@@ -76,3 +76,23 @@ var myButton = document.getElementById("myButton");
                 myPopup.style.display = "none";
             }
         });
+
+//Number plate search
+          const numberPlateButton = document.getElementById("numberPlateButton");
+          const numberPlatePopup = document.getElementById("numberPlatePopup");
+          const closeNoPopup = document.getElementById("closeNoPopup");
+
+          numberPlateButton.addEventListener("click", function () {
+            numberPlatePopup.style.display = "block";
+          });
+
+          closeNoPopup.addEventListener("click", function () {
+            numberPlatePopup.style.display = "none";
+          });
+          
+          window.addEventListener("click",function(event){
+            if(event.target == numberPlatePopup){
+              numberPlatePopup.style.display = "none";
+            }
+          });
+          
