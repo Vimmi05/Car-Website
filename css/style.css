@@ -90,7 +90,7 @@ p {
 
 .vehicle-info,
 .slideshow-container,
-.content,#car-buttons{
+.content,#car-buttons,.mb-3{
   background-color: #212529;
   padding: 20px;
   border-radius: 5px;
@@ -126,6 +126,7 @@ p {
 }
 h2,
 h5 {
+  color: #33353d;
   text-align: center;
   font-weight: 700;
   margin: 25px;
@@ -340,6 +341,93 @@ footer a {
 .social-icons a.instagram:hover {
   background-color: #e4405f;
 }
+.search-form {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.custom-search {
+  margin-left: 10px;
+}
+.help-support{
+  margin-top: 4rem;
+}
+.mb-3{
+  width: 60%;
+  margin-left: 20%;
+}
+select.form-select option:hover {
+  background-color: #212529; 
+}
+.submit-button{
+    margin: 1rem;
+    display: block;
+    margin: 0 auto;
+    border: 1px solid #dee2e6;
+}
+.add-info {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  color: #737373;
+  background-color: #212529;
+  margin-bottom: 2rem;
+}
+
+.add-info .icons {
+  list-style-type: none;
+  align-items: center;
+  margin:1rem;
+}
+.add-info ul.icons li{
+  font-size: large;
+}
+.add-info p a {
+  color: #dee2e6;
+}
+.popup {
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: auto;
+  display: none;
+}
+
+.popup-content {
+  background-color: #737373;
+  margin: 10% auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  width: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.custom-select {
+  margin-bottom: 10px;
+  width: 100%;
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.custom-select option {
+  padding: 5px;
+}
+
+
+/* ################ Media Query Starts #############*/
 
 /* media-query */
 @media (max-width: 767px) {
@@ -363,6 +451,7 @@ footer a {
   }
 }
 
+/* ################ Media Query Ends ############## */
 @keyframes text {
   0% {
     color: black;
@@ -385,3 +474,5 @@ footer a {
     margin-bottom: 40px;
   }
 }
+/*  */
+

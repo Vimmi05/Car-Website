@@ -60,3 +60,19 @@ var swiper = new Swiper(".mySwiper", {
   },
 });
 
+//Vehicle Search
+var myButton = document.getElementById("myButton");
+        var myPopup = document.getElementById("myPopup");
+        var closePopup = document.getElementById("closePopup");
+
+        myButton.addEventListener("click", function () {
+            myPopup.style.display = "block";
+        });
+        closePopup.addEventListener("click", function () {
+            myPopup.style.display = "none";
+        });
+        window.addEventListener("click", function (event) {
+            if (event.target == myPopup) {
+                myPopup.style.display = "none";
+            }
+        });
