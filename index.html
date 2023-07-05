@@ -30,9 +30,11 @@
             </li>
             <!-- Pop up vehicle search -->
             <li class="nav-item">
-              <button id="myButton" class="nav-link">
-                Vehicle
-              </button>
+              <div class="button-container">
+                <button id="myButton" class="nav-link">
+                  Vehicle
+                </button>
+              </div>
               <div id="myPopup" class="popup">
                 <div class="popup-content">
                   <h2>Search by <span>Vehicle</span></h2>
@@ -75,9 +77,11 @@
             </li>
             <!-- Pop up Number Plate -->
             <li class="nav-item">
-              <button id="numberPlateButton" class="nav-link">
-                Number Plate
-              </button>
+              <div class="button-container">
+                <button id="numberPlateButton" class="nav-link">
+                  Number Plate
+                </button>
+              </div>
               <div id="numberPlatePopup" class="popup" style="height: 60%;">
                 <div class="popup-content">
                   <h2>Search by <span>Number Plate</span></h2>
@@ -106,10 +110,13 @@
           </ul>
         </div>
 
-        <form class="d-flex" role="search">
-          <input class="form-control custom-search " type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success custom-search" type="submit">Search</button>
-        </form>
+        <div class="search-container">
+          <form class="d-flex" role="search">
+            <input class="form-control custom-search " type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success custom-search" type="submit">Search</button>
+          </form>
+        </div>
+
       </div>
     </nav>
     <div class="container1">

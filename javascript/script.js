@@ -61,38 +61,39 @@ var swiper = new Swiper(".mySwiper", {
 });
 
 //Vehicle Search
-        const myButton = document.getElementById("myButton");
-        const myPopup = document.getElementById("myPopup");
-        const closePopup = document.getElementById("closePopup");
+    const myButton = document.getElementById("myButton");
+    const myPopup = document.getElementById("myPopup");
+    const closePopup = document.getElementById("closePopup");
 
-        myButton.addEventListener("click", function () {
-            myPopup.style.display = "block";
-        });
-        closePopup.addEventListener("click", function () {
-            myPopup.style.display = "none";
-        });
-        window.addEventListener("click", function (event) {
-            if (event.target == myPopup) {
-                myPopup.style.display = "none";
-            }
-        });
+    myButton.addEventListener("click", function () {
+    myPopup.style.display = "block";
+    });
+    closePopup.addEventListener("click", function () {
+    myPopup.style.display = "none";
+    });
+    window.addEventListener("click", function (event) {
+    if (event.target == myPopup) {
+    myPopup.style.display = "none";
+    }
+    });
 
 //Number plate search
-          const numberPlateButton = document.getElementById("numberPlateButton");
-          const numberPlatePopup = document.getElementById("numberPlatePopup");
-          const closeNoPopup = document.getElementById("closeNoPopup");
+    const numberPlateButton = document.getElementById("numberPlateButton");
+    const numberPlatePopup = document.getElementById("numberPlatePopup");
+    const closeNoPopup = document.getElementById("closeNoPopup");
 
-          numberPlateButton.addEventListener("click", function () {
-            numberPlatePopup.style.display = "block";
-          });
+    numberPlateButton.addEventListener("click", function () {
+    numberPlatePopup.style.display = "block";
+    });
 
-          closeNoPopup.addEventListener("click", function () {
-            numberPlatePopup.style.display = "none";
-          });
+    closeNoPopup.addEventListener("click", function () {
+    numberPlatePopup.style.display = "none";
+    });
           
-          window.addEventListener("click",function(event){
-            if(event.target == numberPlatePopup){
-              numberPlatePopup.style.display = "none";
-            }
-          });
+    window.addEventListener("click",function(event){
+    if(event.target == numberPlatePopup){
+    numberPlatePopup.style.display = "none";
+    }
+    });
           
+
