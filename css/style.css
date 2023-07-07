@@ -516,6 +516,28 @@ button.submit-button {
 /* ################ Media Query Starts #############*/
 
 /* media-query */
+@media (max-width: 768px) {
+  .container1 {
+    width: 80%;
+  }
+
+  .website-text {
+    font-size: 30px;
+    margin-top: 15%;
+  }
+}
+
+@media (max-width: 480px) {
+  .container1 {
+    width: 90%;
+  }
+
+  .website-text {
+    font-size: 24px;
+    margin-top: 10%;
+  }
+}
+
 @media (max-width: 767px) {
   .social-icons li {
     display: block;
