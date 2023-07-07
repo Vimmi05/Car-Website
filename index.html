@@ -16,9 +16,9 @@
 <body>
   <!-- nav-bar -->
   <header>
-    <nav class="navbar navbar-expand-lg bg-dark border-bottom border-bottom-dark" data-bs-theme="dark">
+    <nav class="navbar navbar-expand-lg bg-black border-bottom border-bottom-dark" data-bs-theme="dark">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">NavBar</a>
+        <a class="navbar-brand" href="#">AutoMart</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
           aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -37,6 +37,7 @@
               </div>
               <div id="myPopup" class="popup">
                 <div class="popup-content">
+                  <span class="close" id="closePopup">&times;</span>
                   <h2>Search by <span>Vehicle</span></h2>
                   <form class="form">
 
@@ -84,6 +85,7 @@
               </div>
               <div id="numberPlatePopup" class="popup" style="height: 60%;">
                 <div class="popup-content">
+                  <span id="closeNoPopup" class="close">&times;</span>
                   <h2>Search by <span>Number Plate</span></h2>
                   <form action="" class="form">
                     <input class="form-control custom-search " type="search" placeholder="Search"
@@ -110,28 +112,28 @@
           </ul>
         </div>
 
-        <div class="search-container">
-          <form class="d-flex" role="search">
-            <input class="form-control custom-search " type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success custom-search" type="submit">Search</button>
-          </form>
+        <div class="search-box">
+          <button class="btn-search">
+            <ion-icon name="search-outline"></ion-icon>
+          </button>
+          <input type="text" class="input-search" placeholder="Type to Search...">
         </div>
 
       </div>
     </nav>
     <div class="container1">
-      <h1 class="website-text">Website Name</h1>
-      <p class="text-line"> Lorem ipsum dolor sit amet, cons</p>
+      <h1 class="website-text">AutoMart</h1>
+      <p class="text-line"> Where Quality and Performance Collide for an Unforgettable Drive</p>
       <div class="know-button">
         <button type="button" class="btn btn-primary1 btn-lg">Know More</button>
-        <!-- <button type="button" class="btn btn-secondary btn-lg"></button> -->
+
       </div>
     </div>
   </header>
 
-  <!-- Current Offers -->
+  <!-- Our Work -->
   <div class="current-offers">
-    <h2>Current <span>Offers</span></h2>
+    <h2>Our <span>Work</span></h2>
     <!-- carousel -->
     <div id="carouselExampleCaptions" class="carousel slide">
       <div class="carousel-indicators">
@@ -147,28 +149,16 @@
           <img
             src="https://images.pexels.com/photos/919073/pexels-photo-919073.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
             class="d-block w-100" alt="...">
-          <div class="carousel-caption d-none d-md-block">
-            <h5>Free Delivery</h5>
-            <p>Some representative placeholder content for the first slide.</p>
-          </div>
         </div>
         <div class="carousel-item">
           <img
             src="https://images.pexels.com/photos/919073/pexels-photo-919073.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
             class="d-block w-100" alt="...">
-          <div class="carousel-caption d-none d-md-block">
-            <h5>>Free Delivery</h5>
-            <p>Some representative placeholder content for the second slide.</p>
-          </div>
         </div>
         <div class="carousel-item">
           <img
             src="https://images.pexels.com/photos/919073/pexels-photo-919073.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
             class="d-block w-100" alt="...">
-          <div class="carousel-caption d-none d-md-block">
-            <h5>Free Delivery</h5>
-            <p>Some representative placeholder content for the third slide.</p>
-          </div>
         </div>
       </div>
       <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
@@ -514,15 +504,17 @@
 
   <!-- Why should you choose us? -->
   <div class="choose-us">
-    <h2>Why should you choose <span>Name ?</span></h2>
+    <h2>Why should you choose <span>AutoMart ?</span></h2>
     <div class="cards-info">
       <div class="card " style="width: 33rem; background-color: #fdfcdc;">
         <img class="card-img-top"
           src="https://images.pexels.com/photos/733745/pexels-photo-733745.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
           alt="Card image cap">
         <div class="card-body">
-          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elilat illo placeat dolor provident
-            corrupti, vero molestiae cupiditate debitis!</p>
+          <h5>Original Products</h5>
+          <p class="card-text">
+            We exclusively offer genuine components sourced from reputable AutoMart brands known
+            for their reliability.</p>
         </div>
       </div>
       <div class="card" style="width: 33rem; background-color: #fdfcdc;">
@@ -530,8 +522,10 @@
           src="https://images.pexels.com/photos/733745/pexels-photo-733745.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
           alt="Card image cap">
         <div class="card-body">
-          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elilat illo placeat dolor provident
-            corrupti, vero molestiae cupiditate debitis!</p>
+          <h5>Budget Friendly Prices</h5>
+          <p class="card-text">
+            Repairing a damaged vehicle can be expensive. Using the AutoMart products is a good solution if you're on a
+            budget.</p>
         </div>
       </div>
       <div class="card" style="width: 33rem; background-color: #fdfcdc;">
@@ -539,26 +533,41 @@
           src="https://images.pexels.com/photos/733745/pexels-photo-733745.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
           alt="Card image cap">
         <div class="card-body">
-          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elilat illo placeat dolor provident
-            corrupti, vero molestiae cupiditate debitis!</p>
+          <h5>Diverse Range</h5>
+          <p class="card-text">No matter your preferences or needs, our extensive range of AutoMart products ensures
+            that
+            there is something for everyone. </p>
         </div>
       </div>
     </div>
   </div>
   <!-- Brands we trust -->
   <div class="brands">
-    <h2>Brands <span>we Trust</span></h2>
+    <h2>Brands we <span>Trust</span></h2>
     <div class="swiper mySwiper">
       <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="https://boodmo.com/media/images/brand/669cf6a.webp" alt="" srcset=""></div>
+        <div class="swiper-slide"><img src="https://boodmo.com/media/images/brand/551a859.webp" alt="" srcset=""></div>
+        <div class="swiper-slide"><img src="https://boodmo.com/media/images/brand/3408b8a.webp" alt="" srcset=""></div>
+        <div class="swiper-slide"><img src="https://boodmo.com/media/images/brand/3304251.webp" alt="" srcset=""></div>
+        <div class="swiper-slide"><img src="https://boodmo.com/media/images/brand/096b40c.webp" alt="" srcset=""></div>
+        <div class="swiper-slide"><img src="https://boodmo.com/media/images/brand/7ab516c.webp" alt="" srcset=""></div>
+        <div class="swiper-slide"><img src="https://boodmo.com/media/images/brand/52704b7.webp" alt="" srcset=""></div>
+        <div class="swiper-slide"><img src="https://boodmo.com/media/images/brand/af34236.webp" alt="" srcset=""></div>
+        <div class="swiper-slide"><img src="https://boodmo.com/media/images/brand/4f106b0.webp" alt="" srcset=""></div>
+        <div class="swiper-slide"><img src="https://boodmo.com/media/images/brand/10a8568.webp" alt="" srcset=""></div>
+        <div class="swiper-slide"><img src="https://boodmo.com/media/images/brand/e5b18f5.webp" alt="" srcset=""></div>
+        <div class="swiper-slide"><img src="https://boodmo.com/media/images/brand/6d1831f.webp" alt="" srcset=""></div>
+        <div class="swiper-slide"><img src="https://boodmo.com/media/images/brand/ff1cc61.webp" alt="" srcset=""></div>
+        <div class="swiper-slide"><img src="https://boodmo.com/media/images/brand/987fd20.webp" alt="" srcset=""></div>
         <div class="swiper-slide"><img src="https://boodmo.com/media/images/brand/1586c06.webp" alt="" srcset=""></div>
-        <div class="swiper-slide"><img src="https://boodmo.com/media/images/brand/1586c06.webp" alt="" srcset=""></div>
-        <div class="swiper-slide"><img src="https://boodmo.com/media/images/brand/1586c06.webp" alt="" srcset=""></div>
-        <div class="swiper-slide"><img src="https://boodmo.com/media/images/brand/1586c06.webp" alt="" srcset=""></div>
-        <div class="swiper-slide"><img src="https://boodmo.com/media/images/brand/1586c06.webp" alt="" srcset=""></div>
-        <div class="swiper-slide"><img src="https://boodmo.com/media/images/brand/1586c06.webp" alt="" srcset=""></div>
-        <div class="swiper-slide"><img src="https://boodmo.com/media/images/brand/1586c06.webp" alt="" srcset=""></div>
-        <div class="swiper-slide"><img src="https://boodmo.com/media/images/brand/1586c06.webp" alt="" srcset=""></div>
-        <div class="swiper-slide"><img src="https://boodmo.com/media/images/brand/1586c06.webp" alt="" srcset=""></div>
+        <div class="swiper-slide"><img src="https://boodmo.com/media/images/brand/2345ae4.webp" alt="" srcset=""></div>
+        <div class="swiper-slide"><img src="https://boodmo.com/media/images/brand/f50f113.webp" alt="" srcset=""></div>
+        <div class="swiper-slide"><img src="https://boodmo.com/media/images/brand/a2c58ac.webp" alt="" srcset=""></div>
+        <div class="swiper-slide"><img src="https://boodmo.com/media/images/brand/ed22bfe.webp" alt="" srcset=""></div>
+        <div class="swiper-slide"><img src="https://boodmo.com/media/images/brand/1ce986d.webp" alt="" srcset=""></div>
+        <div class="swiper-slide"><img src="https://boodmo.com/media/images/brand/623b018.webp" alt="" srcset=""></div>
+        <div class="swiper-slide"><img src="https://boodmo.com/media/images/brand/10d796c.webp" alt="" srcset=""></div>
       </div>
       <div class="swiper-pagination"></div>
       <div class="swiper-button-prev"></div>
@@ -592,49 +601,87 @@
 
     <div class="slideshow-container">
       <div class="mySlides">
-        <q>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate cum qui quae at deser debitis voluptas
-          eaque nobis!</q>
-        <p class="author">- John Doe</p>
+        <q>AutoMart truly exceeded my expectations! Their automobile hardware is top-notch and has enhanced my driving
+          experience in ways I never imagined.
+          The quality and performance of their products are unmatched, and their dedication to innovation is
+          commendable. I highly recommend AutoMart to anyone
+          looking to upgrade their vehicle and take their driving to the next level.</q>
+        <p class="author">- Archit </p>
       </div>
 
       <div class="mySlides">
-        <q>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus animpsam. Id a enim temporibus molestias vel
-          illo ea magni sapiente!</q>
-        <p class="author">- Jane Doe</p>
+        <q>I can't say enough good things about AutoMart! Their automobile hardware has completely transformed my car.
+          Not only are their products reliable
+          and durable, but they also add a touch of style and sophistication.</q>
+        <p class="author">- Shubham Sharma</p>
       </div>
 
       <div class="mySlides">
-        <q>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ip Temporibus sint beatae ab ipsum error
-          consequuntur, voluptas fugit facere!</q>
-        <p class="author">- John Doe</p>
+        <q>AutoMart is the go-to destination for all your automotive hardware needs. Their extensive range of products
+          caters to every type of driver, from
+          performance enthusiasts to everyday commuters. What sets AutoMart apart is their commitment to quality.</q>
+        <p class="author">- Digamber</p>
       </div>
 
-
-      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-      <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      <!-- dots at bottom -->
+      <div class="dot-container">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
     </div>
-
-    <!-- dots at bottom -->
-    <div class="dot-container">
-      <span class="dot" onclick="currentSlide(1)"></span>
-      <span class="dot" onclick="currentSlide(2)"></span>
-      <span class="dot" onclick="currentSlide(3)"></span>
-    </div>
-  </div>
   </div>
 
   <!-- Additional Content -->
   <div class="additional-info">
-    <h2>How do we work : key features </h2>
+    <h2>How do we work : <span>Key Features </span></h2>
     <div class="content">
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, quis? Beatae magni, repellat hic at,
-        culpa magnam perspiciatis iste odit eaque nobis similique quasi eligendi a placeat perferendis sit. Reiciendis.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet odit illum sint facilis qui. Rem inventore
-        tempore
-        nesciunt doloribus laborum, saepe aut nisi, consectetur sed aspernatur labore doloremque voluptatem soluta!
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem similique numquam reiciendis soluta
-        necessitatibus
-        voluptate at omnis sequi eum aliquam quae, esse nemo voluptates magni non quia. Facere, ut asperiores.
+      <p>
+      <ul>
+        <li>
+          By utilizing your own vehicle, you gain the freedom from external circumstances and the ability to structure
+          your
+          day according to your preferences. You no longer need to worry about missing public transportation or being
+          late
+          for
+          work due to factors beyond your control. Owning a car grants you a sense of liberation and empowers you to
+          manage both
+          business and leisure travel on your terms. These factors have significantly contributed to the proliferation
+          of
+          vehicles on the roads, including passenger cars, trucks, buses, and more.
+        </li><br>
+        <li>
+          At AutoMart, we pride ourselves on offering transparent and straightforward deals. We do not favor any
+          specific
+          suppliers, as all parts are categorized based on the producers' information and filtered according to
+          customers'
+          preferences. Our priority is to provide a swift and competent service, and should any issues arise, we are
+          committed
+          to resolving them promptly. Our catalogs are designed to be easily navigable, showcasing the latest offers.
+          With
+          new
+          products and up-to-date prices added daily, you can stay informed. Our website is designed to be
+          user-friendly,
+          ensuring
+          a seamless experience whether you're accessing it from a personal computer, laptop, tablet, or smartphone.
+        </li><br>
+        <li>
+          <span style="color: #dee2e6;text-decoration: underline;">Reasons to Choose us</span>
+          <br><br>
+          <ul>
+            <li>In the event that a spare part is found to be incompatible with your car,
+              we will initiate the return process as per your request. Rest assured, our return process is hassle-free
+              and
+              straightforward, ensuring a seamless experience for you.</li>
+            <li>Our catalogs are meticulously crafted by gathering pertinent information from the market. We take full
+              responsibility for providing accurate and detailed product descriptions. Furthermore, we hold our sellers
+              accountable for the terms of their offers and ensuring the authenticity of the products they sell.</li>
+            <li>The usage of our website is completely free for auto car spare parts buyers. You won't incur any
+              additional
+              charges for accessing our platform.</li>
+        </li>
+      </ul>
+      </ul>
       </p>
     </div>
 
@@ -646,12 +693,14 @@
       <div class="row">
         <div class="col-sm-12 col-md-6">
 
-          <p class="text-justify">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro quos alias voluptas
-            maiores aspernatur!
-            Molestias nisi aut incidunt laboriosam eveniet adipisci, amet voluptatem libero repellat eius dolorum
-            deleniti ipsam enim.
+          <p class="text-justify">
+            Your One-Stop Destination for Automotive Hardware Solutions.
+            Discover a wide range of high-quality parts and accessories to enhance your
+            vehicle's performance and style. With AutoMart, you can trust in our commitment
+            to innovation, reliability, and exceptional customer service. Drive with confidence
+            and unlock the full potential of your automobile with AutoMart.
+          </p>
         </div>
-
         <div class="col-xs-6 col-md-3">
           <h4>About</h4>
           <ul class="footer-links">
@@ -673,12 +722,24 @@
           </ul>
         </div>
       </div>
+
+      <div class="col-md-6">
+        <div class="mapouter">
+          <div class="gmap_canvas">
+            <iframe class="gmap_iframe" width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+              src="https://maps.google.com/maps?width=660&amp;height=100&amp;hl=en&amp;q=model town,jalandhar&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+          </div>
+        </div>
+      </div>
+
+
       <hr>
     </div>
+
     <div class="container">
       <div class="row">
         <div class="col-md-8 col-sm-6 col-xs-12">
-          <p class="copyright-text">Copyright &copy; 2017 All Rights Reserved by CompanyName.
+          <p class="copyright-text">Copyright &copy; 2023 All Rights Reserved by AutoMart.
           </p>
         </div>
 
@@ -707,3 +768,7 @@
 </body>
 
 </html>
+<!-- 
+  <div class="mapouter"><div class="gmap_canvas"><iframe class="gmap_iframe" width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=660&amp;height=400&amp;hl=en&amp;q=model town,jalandhar&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a href="https://thepasswordgame.com/">The Password Game</a></div><style>.mapouter{position:relative;text-align:right;width:100%;height:400px;}.gmap_canvas {overflow:hidden;background:none!important;width:100%;height:400px;}.gmap_iframe {height:400px!important;}</style></div>
+ 
+-->

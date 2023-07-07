@@ -18,7 +18,7 @@ html {
 }
 header {
   /* background-image: url('');  */
-  background: #212529;
+  background: black;
   color: #fff;
   padding: 0;
   text-align: center;
@@ -29,28 +29,69 @@ header {
   margin-bottom: 20px;
 }
 
-.custom-search {
-  color: #dee2e6;
-  border: 1px solid #6c757d;
-  transition: all 0.1s;
+.search-box{
+  width: fit-content;
+  height: fit-content;
+  position: relative;
 }
-button .custom-search {
-  background-color: #33353d;
+.input-search{
+  height: 50px;
+  width: 50px;
+  border-style: none;
+  padding: 10px;
+  font-size: 18px;
+  letter-spacing: 2px;
+  outline: none;
+  border-radius: 25px;
+  transition: all .5s ease-in-out;
+  background-color: black;
+  padding-right: 40px;
+  color:#fff;
 }
-.custom-search:hover :active {
-  background-color: #6c757d;
-  border: none;
-  box-shadow: none;
+.input-search::placeholder{
+  color:rgba(255,255,255,.5);
+  font-size: 18px;
+  letter-spacing: 2px;
+  font-weight: 100;
+}
+.btn-search{
+  width: 50px;
+  height: 50px;
+  border-style: none;
+  font-size: 20px;
+  font-weight: bold;
+  outline: none;
+  cursor: pointer;
+  border-radius: 50%;
+  position: absolute;
+  right: 0px;
+  color:#ffffff ;
+  background-color:transparent;
+  pointer-events: painted;  
+}
+.btn-search:focus ~ .input-search{
+  width: 300px;
+  border-radius: 0px;
+  background-color: transparent;
+  border-bottom:1px solid rgba(255,255,255,.5);
+  transition: all 500ms cubic-bezier(0, 0.110, 0.35, 2);
+}
+.input-search:focus{
+  width: 300px;
+  border-radius: 0px;
+  background-color: transparent;
+  border-bottom:1px solid rgba(255,255,255,.5);
+  transition: all 500ms cubic-bezier(0, 0.110, 0.35, 2);
 }
 
 .btn-primary1 {
-  background-color: #6c757d;
+  background-color: #212529;
   color: #dee2e6;
   border: 0;
   transition: all 0.1s;
 }
 .btn-primary1:hover :active {
-  background-color: #212529;
+  background-color: black;
   color: #dee2e6;
 }
 .pointer {
@@ -79,7 +120,7 @@ button .custom-search {
 }
 .text-line {
   font-size: 20px;
-  color: #6c757d;
+  color: #ccd5ae;
 }
 p {
   font-style: italic;
@@ -89,10 +130,13 @@ p {
 .vehicle-info,
 .slideshow-container,
 .content,#car-buttons,.mb-3{
-  background-color: #212529;
+  background-color: black;
   padding: 20px;
   border-radius: 5px;
   margin-bottom: 20px;
+}
+.show-more-container{
+  text-align: center;
 }
 .button-container, .search-container {
   display: flex;
@@ -113,13 +157,20 @@ p {
   height: 50px;
 }
 #carouselExampleCaptions {
-  margin-left: 20%;
-  margin-right: 20%;
+  width: auto;
+  height: auto;
 }
 .card {
   padding: 5px;
   margin: 10px;
-  background-color: #212529;
+  background-color: black;
+  cursor: pointer;
+  transition: all 0.3s ;
+}
+
+.card:hover {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3); 
+  transform: scale(0.9);
 }
 .cards-info {
   display: flex;
@@ -134,9 +185,7 @@ h5 {
   font-weight: 700;
   margin: 25px;
 }
-.carousel-item img {
-  height: 80vh;
-}
+
 span {
   color: #0a0908;
   font-style: italic;
@@ -150,8 +199,9 @@ span {
   overflow: hidden;
 }
 #showMoreBtn {
-  padding-left: 5px;
+  padding:10px;
   margin-left: 15px;
+  font-family:  Verdana, Geneva, Tahoma, sans-serif
 }
 .choose-us .cards {
   margin: 25%;
@@ -172,30 +222,7 @@ q {
 .author {
   color: #fff;
 }
-.prev,
-.next {
-  position: relative;
-  cursor: pointer;
-  align-self: auto;
-  width: auto;
-  color: #dee2e6;
-  font-weight: bold;
-  font-size: 20px;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-  text-decoration: none;
-  transition: all 0.1s;
-}
-.next {
-  position: absolute;
-  right: 0;
-  border-radius: 3px 0 0 3px;
-  padding-right: 20px;
-}
-.prev:hover,
-.next:hover {
-  color: #212529;
-}
+
 .dot-container {
   text-align: center;
   margin-bottom: 20px;
@@ -211,31 +238,36 @@ q {
   display: inline-block;
   transition: background-color 0.2s;
 }
-
+.brands {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+}
 .swiper {
   width: 100%;
   height: 100%;
 }
-
 .swiper-slide {
-  text-align: center;
-  font-size: 18px;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 20px;
 }
 
 .swiper-slide img {
   display: block;
-  width: 50%;
-  height: 100%;
+  max-width: 100%;
+  height: auto;
   object-fit: cover;
   margin-bottom: 10px;
   padding: 30px;
   mix-blend-mode: multiply;
 }
 .swiper-button-prev,.swiper-button-next{
-  color: #212529;
+  color: black;
   
 }
 .active,
@@ -255,8 +287,11 @@ q {
 #car-buttons .btn:hover :active{
   background-color: #6c757d;
 }
+.content{
+  color: #dee2e6;
+}
 footer {
-  background-color: #212529;
+  background-color: black;
   padding: 45px 0 20px;
   font-size: 15px;
   line-height: 24px;
@@ -291,7 +326,7 @@ footer a {
 .footer-links a:active,
 .footer-links a:focus,
 .footer-links a:hover {
-  color: #0a0908;
+  color: #33353d;
   text-decoration: none;
 }
 .footer .social-icons {
@@ -354,14 +389,14 @@ footer a {
   margin-left: 10px;
 }
 .help-support{
-  margin-top: 4rem;
+  margin-top: 5rem;
 }
 .mb-3{
   width: 60%;
   margin-left: 20%;
 }
 select.form-select option:hover {
-  background-color: #212529; 
+  background-color: black; 
 }
 .submit-button{
     margin: 1rem;
@@ -374,7 +409,7 @@ select.form-select option:hover {
   display: flex;
   flex-direction: column;
   color: #737373;
-  background-color: #212529;
+  background-color: black;
   margin-bottom: 2rem;
 }
 
@@ -391,11 +426,11 @@ select.form-select option:hover {
 }
 .popup {
   position: fixed;
-  z-index: 1;
+  z-index: 999;
   left: 0;
   top: 0;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   overflow: auto;
   display: none;
 }
@@ -407,7 +442,22 @@ select.form-select option:hover {
   border: 1px solid #000;
   width: 50%;
   height: 70%;
+  max-width: 500px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+.close {
+  color: #737373;
+  float: right;
+  font-size: 35px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .form {
@@ -439,8 +489,29 @@ option:hover{
   color: #33353d;
 }
 button.submit-button {
-  background-color: #212529; 
+  background-color: black; 
 }
+
+.mapouter {
+  margin-top: 1px;
+  position: relative;
+  text-align: right;
+  width: 100%;
+  height: 226px;
+}
+
+.gmap_canvas {
+  overflow: hidden;
+  background: none !important;
+  width: 100%;
+  height: 226px;
+}
+
+.gmap_iframe {
+  height: 226px !important;
+}
+
+
 
 /* ################ Media Query Starts #############*/
 
@@ -482,6 +553,26 @@ button.submit-button {
     margin: 2rem;
   }
 }
+
+
+@media (max-width: 767px) {
+  .brands {
+    padding: 10px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .brands {
+    padding: 15px;
+  }
+}
+
+@media (min-width: 992px) {
+  .brands {
+    padding: 20px;
+  }
+}
+
 
 /* ################ Media Query Ends ############## */
 @keyframes text {
