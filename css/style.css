@@ -154,7 +154,7 @@ p {
   padding-left: 10px;
 }
 .search-vehicle .custom-select {
-  width: 240px;
+  width: 270px;
   height: 50px;
 }
 #carouselExampleCaptions {
@@ -164,10 +164,11 @@ p {
 .card {
   padding: 5px;
   margin: 10px;
-  background-color: black;
+  background-color: transparent;
   cursor: pointer;
   transition: all 0.3s ;
 }
+
 
 .card:hover {
   box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.3); 
@@ -178,6 +179,7 @@ p {
 }
 .card-text {
   text-align: center;
+  color: #000;
 }
 
 h2,
@@ -187,7 +189,10 @@ h5 {
   font-weight: 700;
   margin: 25px;
 }
-
+h3{
+  color: black;
+  text-align-last: left;
+}
 span {
   color: #0a0908;
   font-style: italic;
@@ -391,7 +396,7 @@ footer a {
   margin-left: 10px;
 }
 
-select.form-select option:hover {
+select .form-select option:hover {
   background-color: black; 
 }
 .submit-button{
@@ -474,6 +479,7 @@ select.form-select option:hover {
 .custom-select option {
   padding: 5px;
 }
+
 option:hover{
   background-color: #6c757d;
 }
@@ -501,6 +507,7 @@ button.submit-button {
   background: none !important;
   width: 100%;
   height: 226px;
+  border-radius: 15px;
 }
 
 .gmap_iframe {
@@ -509,85 +516,13 @@ button.submit-button {
 .help-support{
   margin-top: 5rem;
 }
-
-.m-auto form{
-  width: auto;
-  margin-left: 5rem;
-}
-.buffer {
-  min-height: calc(100vh - 65px); 
-}
-
-.buffer .bg-holder {
-    position: absolute;
-    top: 20%;
-    left: 5%;
-    bottom: 0;
-    width: 90vh;
-    height: 90vh;
-    border-radius: 5px;
-    margin: 20px;  
-    background: url("https://images.pexels.com/photos/396547/pexels-photo-396547.jpeg");
-    background-size: cover;
-    background-position: center center; 
-}
-    
-.help-support .form-group{
-  border: 1px solid lightgray;
-  margin-top: 1rem;
-}
-.form-group label{
-  margin: 1rem 0.3rem 0 0;
-  padding-left: 1rem;
-  color: #000;
-  font-weight: 500;
-  
-}
-.form-group .form-control{
-  border: 1px solid lightgray;
-  margin: 0.5rem;
-  width: 98%;
+.form-control{
   box-shadow: none;
 }
-#name,#tel{
-  width: 93%;
+.custom-select option {
+  box-shadow: none;  
 }
-#message{
-  width: 96.5%;
-}
-.help-container{
-  position: relative;
-}
-.img-text{
-  position:absolute;
-  padding: 1rem;
-  color: black;
-  width: 100%;
-  text-align: center;
-  font-size: large;
-  background-color: gray;
-  opacity: 0.9;
-}
-.img-text{
-  top: 10%;
-}
-.img-text2{
-  top: 50%;
-}
-.img-text3{
-  top: 80%;
-}
-select.form-select option {
-  box-shadow: none;
-  border: none;
-  
-}
-.col-lg-6 h2{
-  font-style: italic;
-  color: #000;
-  text-align: center; 
-  margin-top: -25px;
-}
+
 /* ################ Media Query Starts #############*/
 
 /* media-query */
