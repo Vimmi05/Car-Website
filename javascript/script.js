@@ -104,12 +104,12 @@ function showNumberPlatePrompt() {
     inputAttributes: {
       autocapitalize: 'off'
     },
-    // showCancelButton: true,
-    // confirmButtonText: 'Look up',
-    // showLoaderOnConfirm: true,
+    showCancelButton: true,
+    confirmButtonText: 'Look up',
+    showLoaderOnConfirm: true,
     preConfirm: (login) => {
       return axios.get()
-      // (`https://api.github.com/users/${login}`)
+      (`https://api.github.com/users/${login}`)
         .then(response => {
           if (!response.status === 200) {
             throw new Error(response.statusText);
@@ -130,3 +130,4 @@ function showNumberPlatePrompt() {
     }
   });
 }
+// ..............................................
