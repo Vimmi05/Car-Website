@@ -8,6 +8,8 @@
     integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="https://cdn.jsdelivr.net/npm/axios@0.21"></script>
   <link rel="stylesheet" href="css/style.css">
 
   <title>Document</title>
@@ -179,6 +181,14 @@
   <!-- Search by vehicles -->
   <div class="search-vehicle">
     <h2>Search by <span>Vehicle</span></h2>
+    <!-- Search by Number Plate -->
+    <div class="search-category text-center">
+      <h5>Search by <span>Number Plate</span></h5>
+      <input type="text" style="height: auto;">
+      <button class="btn btn-primary1 btn-lg" onclick="showNumberPlatePrompt()"><ion-icon
+          name="search-outline"></ion-icon></button>
+      <!------------------------------->
+    </div>
     <div class="vehicle-info">
       <form class="form-inline">
 

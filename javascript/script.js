@@ -96,3 +96,37 @@ var swiper = new Swiper(".mySwiper", {
     });
           
 
+//Search Number Plate
+function showNumberPlatePrompt() {
+  Swal.fire({
+    title: 'Search by Number Plate',
+    input: 'text',
+    inputAttributes: {
+      autocapitalize: 'off'
+    },
+    // showCancelButton: true,
+    // confirmButtonText: 'Look up',
+    // showLoaderOnConfirm: true,
+    preConfirm: (login) => {
+      return axios.get()
+      // (`https://api.github.com/users/${login}`)
+        .then(response => {
+          if (!response.status === 200) {
+            throw new Error(response.statusText);
+          }
+          return response.data;
+        })
+        .catch(error => {
+          Swal.showValidationMessage(`Request failed: ${error}`);
+        });
+    },
+    allowOutsideClick: () => !Swal.isLoading()
+  }).then((result) => {
+    if (result.isConfirmed) {
+      Swal.fire({
+        title: `${result.value.login}'s avatar`,
+        imageUrl: result.value.avatar_url
+      });
+    }
+  });
+}
