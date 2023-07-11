@@ -189,8 +189,8 @@
         <div class="search-category1 container">
           <div class="" style="display: flex; justify-content: flex-end; margin-top: 25px;">
 
-            <input type="text" id="numberplateinput" placeholder="search by number plate"
-              style="padding: 18px; margin-top: 2px; border-radius: 5px; margin-left: 15px;">
+            <input type="text" id="numberplateinput" placeholder="PB08CT9875"
+              style="height: 40px; margin-top: 2px; border-radius: 5px; margin-left: 15px;padding-left: 1rem;">
 
             <button class="btn btn-primary1 btn-lg " style="margin-left: 15px; margin-bottom: 15px;"
               onclick="showNumberPlatePrompt()"><ion-icon name="search-outline"></ion-icon></button>
@@ -201,336 +201,366 @@
     <!------------------------------->
 
     <div class="vehicle-info">
-      <form class="form-inline">
+      <div class="container">
+        <form class="form-inline">
 
-        <select class="custom-select my-1" id="inlineFormCustomSelectPref">
-          <option selected>Select Car Maker</option>
-          <option value="1">One</option>
-          <option value="2">Two</option>
-          <option value="3">Three</option>
-        </select>
+          <select class="custom-select my-1" id="inlineFormCustomSelectPref">
+            <option selected>Select Car Maker</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
 
-        <select class="custom-select my-1" id="inlineFormCustomSelectPref">
-          <option selected>Select Model Line</option>
-          <option value="1">One</option>
-          <option value="2">Two</option>
-          <option value="3">Three</option>
-        </select>
+          <select class="custom-select my-1" id="inlineFormCustomSelectPref">
+            <option selected>Select Model Line</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
 
-        <select class="custom-select my-1 " id="inlineFormCustomSelectPref">
-          <option selected>Select Year</option>
-          <option value="1">One</option>
-          <option value="2">Two</option>
-          <option value="3">Three</option>
-        </select>
+          <select class="custom-select my-1 " id="inlineFormCustomSelectPref">
+            <option selected>Select Year</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
 
-        <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
-          <option selected>Select Modification</option>
-          <option value="1">One</option>
-          <option value="2">Two</option>
-          <option value="3">Three</option>
-        </select>
+          <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+            <option selected>Select Modification</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
 
-        <button type="submit" class="btn btn-primary1 btn-lg">Search Parts</button>
-      </form>
-
+          <button type="submit" class="btn btn-primary1 btn-lg">Search Parts</button>
+        </form>
+      </div>
     </div>
   </div>
 
 
   <!-- Search by category -->
   <div class="search-category">
-    <h2>Search by <span>Category</span></h2>
-    <!-- Row 1 -->
-    <div class="cards-info">
-      <div class="card" style="width: 20rem;">
-        <img class="card-img-top" src="Image/car maintenance.png" alt="Card image cap">
-        <div class="card-body">
-          <p class="card-text">Maintenance Service Parts</p>
+    <div class="container">
+      <h2>Search by <span>Category</span></h2>
+      <!-- Row 1 -->
+      <div class="cards-info">
+        <div class="card" style="width: 20rem;">
+          <img class="card-img-top" src="Image/car maintenance.png" alt="Card image cap">
+          <div class="card-body">
+            <p class="card-text">Maintenance Service Parts</p>
+          </div>
+        </div>
+        <div class="card" style="width: 20rem;">
+          <img class="card-img-top" src="Image/air conditioning.png" alt="Card image cap">
+          <div class="card-body">
+            <p class="card-text">Air Conditioning</p>
+          </div>
+        </div>
+        <div class="card" style="width: 20rem;">
+          <img class="card-img-top" src="Image/belts chain.png" alt="Card image cap">
+          <div class="card-body">
+            <p class="card-text">Belts Chains and Rollers</p>
+          </div>
+        </div>
+        <div class="card" style="width: 20rem;">
+          <img class="card-img-top" src="Image/bearning.png" alt="Card image cap">
+          <div class="card-body">
+            <p class="card-text">Bearings</p>
+          </div>
+        </div>
+        <div class="card" style="width: 20rem;">
+          <img class="card-img-top" src="Image/car body.png" alt="Card image cap">
+          <div class="card-body">
+            <p class="card-text">Body</p>
+          </div>
         </div>
       </div>
-      <div class="card" style="width: 20rem;">
-        <img class="card-img-top" src="Image/air conditioning.png" alt="Card image cap">
-        <div class="card-body">
-          <p class="card-text">Air Conditioning</p>
-        </div>
-      </div>
-      <div class="card" style="width: 20rem;">
-        <img class="card-img-top" src="Image/belts chain.png" alt="Card image cap">
-        <div class="card-body">
-          <p class="card-text">Belts Chains and Rollers</p>
-        </div>
-      </div>
-      <div class="card" style="width: 20rem;">
-        <img class="card-img-top" src="Image/bearning.png" alt="Card image cap">
-        <div class="card-body">
-          <p class="card-text">Bearings</p>
-        </div>
-      </div>
-      <div class="card" style="width: 20rem;">
-        <img class="card-img-top" src="Image/car body.png" alt="Card image cap">
-        <div class="card-body">
-          <p class="card-text">Body</p>
-        </div>
-      </div>
-    </div>
 
-    <!-- Row 2 -->
-    <div class="cards-info">
-      <div class="card" style="width: 20rem;">
-        <img class="card-img-top" src="Image/control cables.png" alt="Card image cap">
-        <div class="card-body">
-          <p class="card-text">Control Cable</p>
+      <!-- Row 2 -->
+      <div class="cards-info">
+        <div class="card" style="width: 20rem;">
+          <img class="card-img-top" src="Image/control cables.png" alt="Card image cap">
+          <div class="card-body">
+            <p class="card-text">Control Cable</p>
+          </div>
+        </div>
+        <div class="card" style="width: 20rem;">
+          <img class="card-img-top" src="Image/brake system.png" alt="Card image cap">
+          <div class="card-body">
+            <p class="card-text">Brake System</p>
+          </div>
+        </div>
+        <div class="card" style="width: 20rem;">
+          <img class="card-img-top" src="Image/car accessories.png" alt="Card image cap">
+          <div class="card-body">
+            <p class="card-text">Car Accessories</p>
+          </div>
+        </div>
+        <div class="card" style="width: 20rem;">
+          <img class="card-img-top" src="Image/clutch system.png" alt="Card image cap">
+          <div class="card-body">
+            <p class="card-text">Clutch System</p>
+          </div>
+        </div>
+        <div class="card" style="width: 20rem;">
+          <img class="card-img-top" src="Image/electric componrnt.png" alt="Card image cap">
+          <div class="card-body">
+            <p class="card-text">Electric Componenets</p>
+          </div>
         </div>
       </div>
-      <div class="card" style="width: 20rem;">
-        <img class="card-img-top" src="Image/brake system.png" alt="Card image cap">
-        <div class="card-body">
-          <p class="card-text">Brake System</p>
+      <!-- Row 3 -->
+      <div class="cards-info more-images" id="more-images">
+        <div class="card" style="width: 20rem;">
+          <img class="card-img-top" src="Image/engine.png" alt="Card image cap">
+          <div class="card-body">
+            <p class="card-text">Engine</p>
+          </div>
+        </div>
+        <div class="card" style="width: 20rem;">
+          <img class="card-img-top" src="Image/Engine cOOLING sYSTEM.png" alt="Card image cap">
+          <div class="card-body">
+            <p class="card-text">Engine Cooling System</p>
+          </div>
+        </div>
+        <div class="card" style="width: 20rem;">
+          <img class="card-img-top" src="Image/Exhaust System.png" alt="Card image cap">
+          <div class="card-body">
+            <p class="card-text">Exhaust System</p>
+          </div>
+        </div>
+        <div class="card" style="width: 20rem;">
+          <img class="card-img-top" src="Image/Filters.png" alt="Card image cap">
+          <div class="card-body">
+            <p class="card-text">Filters</p>
+          </div>
+        </div>
+        <div class="card" style="width: 20rem;">
+          <img class="card-img-top" src="Image/Fuel Supply System.png" alt="Card image cap">
+          <div class="card-body">
+            <p class="card-text">Fuel Supply System</p>
+          </div>
         </div>
       </div>
-      <div class="card" style="width: 20rem;">
-        <img class="card-img-top" src="Image/car accessories.png" alt="Card image cap">
-        <div class="card-body">
-          <p class="card-text">Car Accessories</p>
+      <!-- Row 4 -->
+      <div class="cards-info more-images" id="more-images">
+        <div class="card" style="width: 20rem;">
+          <img class="card-img-top" src="Image/Gaskets and Sealing Rings.png" alt="Card image cap">
+          <div class="card-body">
+            <p class="card-text">Gaskets and Sealing Rings</p>
+          </div>
+        </div>
+        <div class="card" style="width: 20rem;">
+          <img class="card-img-top" src="Image/Ignition and Glowplug System.png" alt="Card image cap">
+          <div class="card-body">
+            <p class="card-text">Ignition and Glowplug System</p>
+          </div>
+        </div>
+        <div class="card" style="width: 20rem;">
+          <img class="card-img-top" src="Image/Interior and Comfort.png" alt="Card image cap">
+          <div class="card-body">
+            <p class="card-text">Interior and comfort</p>
+          </div>
+        </div>
+        <div class="card" style="width: 20rem;">
+          <img class="card-img-top" src="Image/Lightning.png" alt="Card image cap">
+          <div class="card-body">
+            <p class="card-text">Lighting</p>
+          </div>
+        </div>
+        <div class="card" style="width: 20rem;">
+          <img class="card-img-top" src="Image/Oil and Fluids.png" alt="Card image cap">
+          <div class="card-body">
+            <p class="card-text">Oils and Fluids</p>
+          </div>
         </div>
       </div>
-      <div class="card" style="width: 20rem;">
-        <img class="card-img-top" src="Image/clutch system.png" alt="Card image cap">
-        <div class="card-body">
-          <p class="card-text">Clutch System</p>
+      <!-- Row 5 -->
+      <div class="cards-info more-images" id="more-images">
+        <div class="card" style="width: 20rem;">
+          <img class="card-img-top" src="Image/Pipes and Hoses.png" alt="Card image cap">
+          <div class="card-body">
+            <p class="card-text">Pipes and Hoses</p>
+          </div>
+        </div>
+        <div class="card" style="width: 20rem;">
+          <img class="card-img-top" src="Image/Repair Kits.png" alt="Card image cap">
+          <div class="card-body">
+            <p class="card-text">Repair Kits</p>
+          </div>
+        </div>
+        <div class="card" style="width: 20rem;">
+          <img class="card-img-top" src="Image/Sensors Relays andd Control units.png" alt="Card image cap">
+          <div class="card-body">
+            <p class="card-text">Sensor Relays and Control Units</p>
+          </div>
+        </div>
+        <div class="card" style="width: 20rem;">
+          <img class="card-img-top" src="Image/Steering.png" alt="Card image cap">
+          <div class="card-body">
+            <p class="card-text">Steering</p>
+          </div>
+        </div>
+        <div class="card" style="width: 20rem;">
+          <img class="card-img-top" src="Image/Suspension and Arms.png" alt="Card image cap">
+          <div class="card-body">
+            <p class="card-text">Suspension and Arms</p>
+          </div>
         </div>
       </div>
-      <div class="card" style="width: 20rem;">
-        <img class="card-img-top" src="Image/electric componrnt.png" alt="Card image cap">
-        <div class="card-body">
-          <p class="card-text">Electric Componenets</p>
+      <!-- Row 6 -->
+      <div class="cards-info more-images" id="more-images">
+        <div class="card" style="width: 20rem;">
+          <img class="card-img-top" src="Image/Towbar Parts.png" alt="Card image cap">
+          <div class="card-body">
+            <p class="card-text">Towbar Parts</p>
+          </div>
+        </div>
+        <div class="card" style="width: 20rem;">
+          <img class="card-img-top" src="Image/Transmission.png" alt="Card image cap">
+          <div class="card-body">
+            <p class="card-text">Transmission</p>
+          </div>
+        </div>
+        <div class="card" style="width: 20rem;">
+          <img class="card-img-top" src="Image/icon 6.png" alt="Card image cap">
+          <div class="card-body">
+            <p class="card-text">Trims</p>
+          </div>
+        </div>
+        <div class="card" style="width: 20rem;">
+          <img class="card-img-top" src="Image/Tyres andd Alloys.png" alt="Card image cap">
+          <div class="card-body">
+            <p class="card-text">Tyres and Alloys</p>
+          </div>
+        </div>
+        <div class="card" style="width: 20rem;">
+          <img class="card-img-top" src="Image/Universal.png" alt="Card image cap">
+          <div class="card-body">
+            <p class="card-text">Universal</p>
+          </div>
+        </div>
+      </div>
+      <!-- Row 7 -->
+      <div class="cards-info more-images" id="more-images">
+        <div class="card" style="width: 16.6rem;">
+          <img class="card-img-top" src="Image/Wheels.png" alt="Card image cap">
+          <div class="card-body">
+            <p class="card-text">Wheels</p>
+          </div>
+        </div>
+        <div class="card" style="width: 16.6rem;">
+          <img class="card-img-top" src="Image/Untitled-2.png" alt="Card image cap">
+          <div class="card-body">
+            <p class="card-text">Windscreen Cleaning System</p>
+          </div>
         </div>
       </div>
     </div>
-    <!-- Row 3 -->
-    <div class="cards-info more-images" id="more-images">
-      <div class="card" style="width: 20rem;">
-        <img class="card-img-top" src="Image/engine.png" alt="Card image cap">
-        <div class="card-body">
-          <p class="card-text">Engine</p>
-        </div>
-      </div>
-      <div class="card" style="width: 20rem;">
-        <img class="card-img-top" src="Image/Engine cOOLING sYSTEM.png" alt="Card image cap">
-        <div class="card-body">
-          <p class="card-text">Engine Cooling System</p>
-        </div>
-      </div>
-      <div class="card" style="width: 20rem;">
-        <img class="card-img-top" src="Image/Exhaust System.png" alt="Card image cap">
-        <div class="card-body">
-          <p class="card-text">Exhaust System</p>
-        </div>
-      </div>
-      <div class="card" style="width: 20rem;">
-        <img class="card-img-top" src="Image/Filters.png" alt="Card image cap">
-        <div class="card-body">
-          <p class="card-text">Filters</p>
-        </div>
-      </div>
-      <div class="card" style="width: 20rem;">
-        <img class="card-img-top" src="Image/Fuel Supply System.png" alt="Card image cap">
-        <div class="card-body">
-          <p class="card-text">Fuel Supply System</p>
-        </div>
-      </div>
+    <div class="show-more-container">
+      <button id="showMoreBtn" class=" btn btn-primary1 btn-lg" onclick="showMore()">Show More</button>
     </div>
-    <!-- Row 4 -->
-    <div class="cards-info more-images" id="more-images">
-      <div class="card" style="width: 20rem;">
-        <img class="card-img-top" src="Image/Gaskets and Sealing Rings.png" alt="Card image cap">
-        <div class="card-body">
-          <p class="card-text">Gaskets and Sealing Rings</p>
-        </div>
-      </div>
-      <div class="card" style="width: 20rem;">
-        <img class="card-img-top" src="Image/Ignition and Glowplug System.png" alt="Card image cap">
-        <div class="card-body">
-          <p class="card-text">Ignition and Glowplug System</p>
-        </div>
-      </div>
-      <div class="card" style="width: 20rem;">
-        <img class="card-img-top" src="Image/Interior and Comfort.png" alt="Card image cap">
-        <div class="card-body">
-          <p class="card-text">Interior and comfort</p>
-        </div>
-      </div>
-      <div class="card" style="width: 20rem;">
-        <img class="card-img-top" src="Image/Lightning.png" alt="Card image cap">
-        <div class="card-body">
-          <p class="card-text">Lighting</p>
-        </div>
-      </div>
-      <div class="card" style="width: 20rem;">
-        <img class="card-img-top" src="Image/Oil and Fluids.png" alt="Card image cap">
-        <div class="card-body">
-          <p class="card-text">Oils and Fluids</p>
-        </div>
-      </div>
-    </div>
-    <!-- Row 5 -->
-    <div class="cards-info more-images" id="more-images">
-      <div class="card" style="width: 20rem;">
-        <img class="card-img-top" src="Image/Pipes and Hoses.png" alt="Card image cap">
-        <div class="card-body">
-          <p class="card-text">Pipes and Hoses</p>
-        </div>
-      </div>
-      <div class="card" style="width: 20rem;">
-        <img class="card-img-top" src="Image/Repair Kits.png" alt="Card image cap">
-        <div class="card-body">
-          <p class="card-text">Repair Kits</p>
-        </div>
-      </div>
-      <div class="card" style="width: 20rem;">
-        <img class="card-img-top" src="Image/Sensors Relays andd Control units.png" alt="Card image cap">
-        <div class="card-body">
-          <p class="card-text">Sensor Relays and Control Units</p>
-        </div>
-      </div>
-      <div class="card" style="width: 20rem;">
-        <img class="card-img-top" src="Image/Steering.png" alt="Card image cap">
-        <div class="card-body">
-          <p class="card-text">Steering</p>
-        </div>
-      </div>
-      <div class="card" style="width: 20rem;">
-        <img class="card-img-top" src="Image/Suspension and Arms.png" alt="Card image cap">
-        <div class="card-body">
-          <p class="card-text">Suspension and Arms</p>
-        </div>
-      </div>
-    </div>
-    <!-- Row 6 -->
-    <div class="cards-info more-images" id="more-images">
-      <div class="card" style="width: 20rem;">
-        <img class="card-img-top" src="Image/Towbar Parts.png" alt="Card image cap">
-        <div class="card-body">
-          <p class="card-text">Towbar Parts</p>
-        </div>
-      </div>
-      <div class="card" style="width: 20rem;">
-        <img class="card-img-top" src="Image/Transmission.png" alt="Card image cap">
-        <div class="card-body">
-          <p class="card-text">Transmission</p>
-        </div>
-      </div>
-      <div class="card" style="width: 20rem;">
-        <img class="card-img-top" src="Image/icon 6.png" alt="Card image cap">
-        <div class="card-body">
-          <p class="card-text">Trims</p>
-        </div>
-      </div>
-      <div class="card" style="width: 20rem;">
-        <img class="card-img-top" src="Image/Tyres andd Alloys.png" alt="Card image cap">
-        <div class="card-body">
-          <p class="card-text">Tyres and Alloys</p>
-        </div>
-      </div>
-      <div class="card" style="width: 20rem;">
-        <img class="card-img-top" src="Image/Universal.png" alt="Card image cap">
-        <div class="card-body">
-          <p class="card-text">Universal</p>
-        </div>
-      </div>
-    </div>
-    <!-- Row 7 -->
-    <div class="cards-info more-images" id="more-images">
-      <div class="card" style="width: 16.6rem;">
-        <img class="card-img-top" src="Image/Wheels.png" alt="Card image cap">
-        <div class="card-body">
-          <p class="card-text">Wheels</p>
-        </div>
-      </div>
-      <div class="card" style="width: 16.6rem;">
-        <img class="card-img-top" src="Image/Untitled-2.png" alt="Card image cap">
-        <div class="card-body">
-          <p class="card-text">Windscreen Cleaning System</p>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="show-more-container">
-    <button id="showMoreBtn" class=" btn btn-primary1 btn-lg" onclick="showMore()">Show More</button>
   </div>
   </div>
 
   <!-- Why should you choose us? -->
   <div class="choose-us">
-    <h2>Why should you choose <span>AutoMart ?</span></h2>
-    <div class="cards-info">
-      <div class="card " style="width: 33rem; background-color: #fdfcdc;">
-        <img class="card-img-top"
-          src="https://images.pexels.com/photos/733745/pexels-photo-733745.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-          alt="Card image cap">
-        <div class="card-body">
-          <h5>Original Products</h5>
-          <p class="card-text">
-            We exclusively offer genuine components sourced from reputable AutoMart brands known
-            for their reliability.</p>
+    <div class="container">
+      <h2>Why should you choose <span>AutoMart ?</span></h2>
+      <div class="cards-info">
+        <div class="card " style="width: 33rem; background-color: #fdfcdc;">
+          <img class="card-img-top"
+            src="https://images.pexels.com/photos/733745/pexels-photo-733745.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt="Card image cap">
+          <div class="card-body">
+            <h5>Original Products</h5>
+            <p class="card-text">
+              We exclusively offer genuine components sourced from reputable AutoMart brands known
+              for their reliability.</p>
+          </div>
         </div>
-      </div>
-      <div class="card" style="width: 33rem; background-color: #fdfcdc;">
-        <img class="card-img-top"
-          src="https://images.pexels.com/photos/733745/pexels-photo-733745.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-          alt="Card image cap">
-        <div class="card-body">
-          <h5>Budget Friendly Prices</h5>
-          <p class="card-text">
-            Repairing a damaged vehicle can be expensive. Using the AutoMart products is a good solution if you're on a
-            budget.</p>
+        <div class="card" style="width: 33rem; background-color: #fdfcdc;">
+          <img class="card-img-top"
+            src="https://images.pexels.com/photos/733745/pexels-photo-733745.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt="Card image cap">
+          <div class="card-body">
+            <h5>Budget Friendly Prices</h5>
+            <p class="card-text">
+              Repairing a damaged vehicle can be expensive. Using the AutoMart products is a good solution if you're on
+              a
+              budget.</p>
+          </div>
         </div>
-      </div>
-      <div class="card" style="width: 33rem; background-color: #fdfcdc;">
-        <img class="card-img-top"
-          src="https://images.pexels.com/photos/733745/pexels-photo-733745.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-          alt="Card image cap">
-        <div class="card-body">
-          <h5>Diverse Range</h5>
-          <p class="card-text">No matter your preferences or needs, our extensive range of AutoMart products ensures
-            that
-            there is something for everyone. </p>
+        <div class="card" style="width: 33rem; background-color: #fdfcdc;">
+          <img class="card-img-top"
+            src="https://images.pexels.com/photos/733745/pexels-photo-733745.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+            alt="Card image cap">
+          <div class="card-body">
+            <h5>Diverse Range</h5>
+            <p class="card-text">No matter your preferences or needs, our extensive range of AutoMart products ensures
+              that
+              there is something for everyone. </p>
+          </div>
         </div>
       </div>
     </div>
   </div>
   <!-- Brands we trust -->
   <div class="brands">
-    <h2>Brands we <span>Trust</span></h2>
-    <div class="swiper mySwiper">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide"><img src="https://boodmo.com/media/images/brand/669cf6a.webp" alt="" srcset=""></div>
-        <div class="swiper-slide"><img src="https://boodmo.com/media/images/brand/551a859.webp" alt="" srcset=""></div>
-        <div class="swiper-slide"><img src="https://boodmo.com/media/images/brand/3408b8a.webp" alt="" srcset=""></div>
-        <div class="swiper-slide"><img src="https://boodmo.com/media/images/brand/3304251.webp" alt="" srcset=""></div>
-        <div class="swiper-slide"><img src="https://boodmo.com/media/images/brand/096b40c.webp" alt="" srcset=""></div>
-        <div class="swiper-slide"><img src="https://boodmo.com/media/images/brand/7ab516c.webp" alt="" srcset=""></div>
-        <div class="swiper-slide"><img src="https://boodmo.com/media/images/brand/52704b7.webp" alt="" srcset=""></div>
-        <div class="swiper-slide"><img src="https://boodmo.com/media/images/brand/af34236.webp" alt="" srcset=""></div>
-        <div class="swiper-slide"><img src="https://boodmo.com/media/images/brand/4f106b0.webp" alt="" srcset=""></div>
-        <div class="swiper-slide"><img src="https://boodmo.com/media/images/brand/10a8568.webp" alt="" srcset=""></div>
-        <div class="swiper-slide"><img src="https://boodmo.com/media/images/brand/e5b18f5.webp" alt="" srcset=""></div>
-        <div class="swiper-slide"><img src="https://boodmo.com/media/images/brand/6d1831f.webp" alt="" srcset=""></div>
-        <div class="swiper-slide"><img src="https://boodmo.com/media/images/brand/ff1cc61.webp" alt="" srcset=""></div>
-        <div class="swiper-slide"><img src="https://boodmo.com/media/images/brand/987fd20.webp" alt="" srcset=""></div>
-        <div class="swiper-slide"><img src="https://boodmo.com/media/images/brand/1586c06.webp" alt="" srcset=""></div>
-        <div class="swiper-slide"><img src="https://boodmo.com/media/images/brand/2345ae4.webp" alt="" srcset=""></div>
-        <div class="swiper-slide"><img src="https://boodmo.com/media/images/brand/f50f113.webp" alt="" srcset=""></div>
-        <div class="swiper-slide"><img src="https://boodmo.com/media/images/brand/a2c58ac.webp" alt="" srcset=""></div>
-        <div class="swiper-slide"><img src="https://boodmo.com/media/images/brand/ed22bfe.webp" alt="" srcset=""></div>
-        <div class="swiper-slide"><img src="https://boodmo.com/media/images/brand/1ce986d.webp" alt="" srcset=""></div>
-        <div class="swiper-slide"><img src="https://boodmo.com/media/images/brand/623b018.webp" alt="" srcset=""></div>
-        <div class="swiper-slide"><img src="https://boodmo.com/media/images/brand/10d796c.webp" alt="" srcset=""></div>
+    <div class="container">
+      <h2>Brands we <span>Trust</span></h2>
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="https://boodmo.com/media/images/brand/669cf6a.webp" alt="" srcset="">
+          </div>
+          <div class="swiper-slide"><img src="https://boodmo.com/media/images/brand/551a859.webp" alt="" srcset="">
+          </div>
+          <div class="swiper-slide"><img src="https://boodmo.com/media/images/brand/3408b8a.webp" alt="" srcset="">
+          </div>
+          <div class="swiper-slide"><img src="https://boodmo.com/media/images/brand/3304251.webp" alt="" srcset="">
+          </div>
+          <div class="swiper-slide"><img src="https://boodmo.com/media/images/brand/096b40c.webp" alt="" srcset="">
+          </div>
+          <div class="swiper-slide"><img src="https://boodmo.com/media/images/brand/7ab516c.webp" alt="" srcset="">
+          </div>
+          <div class="swiper-slide"><img src="https://boodmo.com/media/images/brand/52704b7.webp" alt="" srcset="">
+          </div>
+          <div class="swiper-slide"><img src="https://boodmo.com/media/images/brand/af34236.webp" alt="" srcset="">
+          </div>
+          <div class="swiper-slide"><img src="https://boodmo.com/media/images/brand/4f106b0.webp" alt="" srcset="">
+          </div>
+          <div class="swiper-slide"><img src="https://boodmo.com/media/images/brand/10a8568.webp" alt="" srcset="">
+          </div>
+          <div class="swiper-slide"><img src="https://boodmo.com/media/images/brand/e5b18f5.webp" alt="" srcset="">
+          </div>
+          <div class="swiper-slide"><img src="https://boodmo.com/media/images/brand/6d1831f.webp" alt="" srcset="">
+          </div>
+          <div class="swiper-slide"><img src="https://boodmo.com/media/images/brand/ff1cc61.webp" alt="" srcset="">
+          </div>
+          <div class="swiper-slide"><img src="https://boodmo.com/media/images/brand/987fd20.webp" alt="" srcset="">
+          </div>
+          <div class="swiper-slide"><img src="https://boodmo.com/media/images/brand/1586c06.webp" alt="" srcset="">
+          </div>
+          <div class="swiper-slide"><img src="https://boodmo.com/media/images/brand/2345ae4.webp" alt="" srcset="">
+          </div>
+          <div class="swiper-slide"><img src="https://boodmo.com/media/images/brand/f50f113.webp" alt="" srcset="">
+          </div>
+          <div class="swiper-slide"><img src="https://boodmo.com/media/images/brand/a2c58ac.webp" alt="" srcset="">
+          </div>
+          <div class="swiper-slide"><img src="https://boodmo.com/media/images/brand/ed22bfe.webp" alt="" srcset="">
+          </div>
+          <div class="swiper-slide"><img src="https://boodmo.com/media/images/brand/1ce986d.webp" alt="" srcset="">
+          </div>
+          <div class="swiper-slide"><img src="https://boodmo.com/media/images/brand/623b018.webp" alt="" srcset="">
+          </div>
+          <div class="swiper-slide"><img src="https://boodmo.com/media/images/brand/10d796c.webp" alt="" srcset="">
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
       </div>
-      <div class="swiper-pagination"></div>
-      <div class="swiper-button-prev"></div>
-      <div class="swiper-button-next"></div>
     </div>
   </div>
 
