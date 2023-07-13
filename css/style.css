@@ -151,7 +151,6 @@ p {
   
 }
 
-/* Next button color */
 .carousel-control-next-icon {
   filter: invert(100%);
 }
@@ -211,7 +210,6 @@ p {
 }
 .cards-info {
   display: flex;
-  
 }
 .card-text {
   font-weight: 600;
