@@ -18,16 +18,17 @@ html {
   
 }
 header {
-  /* background-image: url('Image/car.png');  */
-  background: black;
+  background-image:  linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url('https://github.com/Vimmi05/Car-Website/blob/main/Image/car.png?raw=true');
+  /* background: black; */
   color: #fff;
   padding: 0;
   text-align: center;
   background-attachment: fixed;
-  height: 80vh;
+  height: 100vh;
   background-size: cover;
   background-position: center;
   margin-bottom: 20px;
+  
 }
 
 .search-box{
@@ -125,11 +126,15 @@ header {
   margin-bottom: 25px;
   position: relative;
   animation: text 3s infinite;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  mix-blend-mode: overlay;
 }
 .text-line {
   font-size: 20px;
   /* color: #ccd5ae; */
   color:white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  mix-blend-mode: overlay;
 }
 p {
   font-style: italic;
