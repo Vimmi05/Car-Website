@@ -128,7 +128,8 @@ header {
 }
 .text-line {
   font-size: 20px;
-  color: #ccd5ae;
+  /* color: #ccd5ae; */
+  color:white;
 }
 p {
   font-style: italic;
