@@ -10,6 +10,10 @@ html {
   font-weight: 300;
   font-size: 15px;
 }
+.bg-img{
+  background-image: url('Image/CarGarage.jpg');
+  background-attachment: fixed;
+}
 .navbar {
   position: fixed;
   top: 0;
@@ -18,7 +22,7 @@ html {
   
 }
 header {
-  background-image:  linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url('https://github.com/Vimmi05/Car-Website/blob/main/Image/car.png?raw=true');
+  background-image:  linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('https://github.com/Vimmi05/Car-Website/blob/main/Image/car.png?raw=true');
   /* background: black; */
   color: #fff;
   padding: 0;
@@ -200,6 +204,7 @@ p {
   display: flex;
 }
 .card-text {
+  
   text-align: center;
   color: #000;
 }
