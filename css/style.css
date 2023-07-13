@@ -135,6 +135,15 @@ p {
   font-style: italic;
   color: #dee2e6;
 }
+.carousel-control-prev-icon {
+  filter: invert(100%) ;
+  
+}
+
+/* Next button color */
+.carousel-control-next-icon {
+  filter: invert(100%);
+}
 
 .vehicle-info,
 .slideshow-container,
