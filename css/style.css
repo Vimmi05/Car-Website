@@ -137,7 +137,6 @@ header {
 }
 .text-line {
   font-size: 20px;
-  /* color: #ccd5ae; */
   color:white;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   mix-blend-mode: overlay;
