@@ -11,8 +11,7 @@ html {
   font-size: 15px;
 }
 .bg-img{
-  background-image: url('https://github.com/Vimmi05/Car-Website/blob/main/Image/white-bricks-wall-texture.jpg?raw=true'); 
-  /* background-image: url('https://imgtr.ee/image/U0HNX'); */
+  background-image: url('https://res.cloudinary.com/dros2tmo8/image/upload/v1689657191/white-bricks-wall-texture_akmolb.jpg'); 
   background-attachment: fixed;
   background-size: 100%;
   margin-top: -2%;
@@ -25,7 +24,7 @@ html {
   
 }
 header {
-  background-image:  linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('https://github.com/Vimmi05/Car-Website/blob/main/Image/car.png?raw=true');
+  background-image:  linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('https://res.cloudinary.com/dros2tmo8/image/upload/v1689656845/car_cbrbiz.png');
   /* background: black; */
   color: #fff;
   padding: 0;
